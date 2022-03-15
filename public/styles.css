@@ -1,0 +1,273 @@
+/* 
+   0 - HTML elements
+   1 - Header/Navbar
+   2 - Categories bar
+   3 - News card
+   4 - Other body elements
+   5 - Media queries
+*/
+
+/* 0 - HTML Elements */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #eeeeee;
+}
+
+footer {
+  background-color: #0f044c;
+  bottom: 0;
+  color: #eeeeee;
+  height: 2.5rem;
+  margin-top: 35px;
+  padding-top: 4px;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* 1 - Header/Navbar */
+
+/* 1a - Heading text */
+
+.heading-content {
+  background-color: #0f044c;
+  margin: 0;
+}
+
+.header-date {
+  color: #eeeeee;
+  margin-top: 1.8rem;
+  margin-left: 1.2rem;
+}
+
+.header-flex {
+  display: flex;
+}
+
+.title-text {
+  margin-left: 215px;
+}
+
+/* 1b - Country select dropdown */
+
+.country-select {
+  background-color: white;
+  height: 2.5rem;
+  margin-top: 1.3rem;
+}
+
+/* 1c - Search bar */
+
+#search-bar {
+  background-color: white;
+  height: 2.5rem;
+  margin: 1.3rem 1.3rem 1.3rem 0.5rem;
+}
+
+#search-bar:hover {
+  border-color: white;
+  box-shadow: 0 0 7px white;
+}
+
+/* 2 - Categories bar */
+
+body .categories {
+  background-color: #d1d1d1;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3%;
+  text-transform: none;
+}
+
+.categories .category-bar-text {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-transform: none;
+}
+
+.categories .category-bar-text:hover {
+  color: #007bff;
+}
+
+.categories .category-bar-text-clicked {
+  background-color: #bdbcbc;
+  color: #007bff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-transform: none;
+}
+
+/* 3 - News card */
+
+/* 3a - News card box */
+
+.news-card {
+  display: inline-block;
+  margin: 20px;
+  text-align: left;
+}
+
+/* 3b - News card content */
+
+.news-card-content {
+  height: 250px;
+}
+
+.content-container {
+  margin-bottom: 50px;
+  min-height: 90vh;
+  text-align: center;
+}
+
+/* 3c - News card actions bar */
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hyperlinks {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* 4 - Other body elements */
+
+/* 4a - No results banner */
+
+.no-results-badge {
+  margin: 5%;
+}
+
+/* 4b - No results badge */
+
+.separator {
+  margin-top: 50px;
+}
+
+/* 4c - Load more button */
+
+.content-container .load-more-button {
+  margin-top: 4%;
+}
+
+/* 4d - Back to top button */
+
+.back-to-top {
+  text-align: right;
+}
+
+.back-to-top .icon-button-top{
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+
+.back-to-top .icon-arrow-up {
+  background-color:#d1d1d1;
+  border-radius: 10px;
+  height: 55px;
+  width: 55px;
+}
+
+/* 5 - Media queries */
+
+@media (max-width: 1065px) {
+  .header-date {
+    display: none;
+  }
+
+  .title-text {
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 880px) {
+  #category-collapse {
+    display: none;
+  }
+
+  .content-container .load-more-button {
+    width: 400px;
+  }
+}
+
+@media (max-width: 879px) {
+  #category-regular {
+    display: none;
+  }
+}
+
+@media (max-width: 735px) {
+  header .country-select {
+    display: none 
+  }
+
+  .header-date {
+    display: none;
+  }
+
+  .title-text {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 535px) {
+  header .country-select {
+    display: none 
+  }
+
+  header {
+    align-items: center;
+    display: block;
+    justify-content: center;
+    padding-top: 1px;
+    text-align: center;
+  }
+
+  .title-text {
+    margin: 1rem;
+  }
+
+  .header-date {
+    display: none;
+  }
+
+  .news-card-content {
+    height: 275px;
+  }
+
+  #search-bar{
+    align-items: center;
+    display: block;
+    justify-content: center;
+    margin: 0rem auto 1rem;    
+    text-align: center;
+  } 
+}
+
+@media (max-width: 325px) {
+  body {
+    min-width: 310px;
+  }
+
+  .news-card-content {
+    height: 300px;
+  }
+}
