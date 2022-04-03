@@ -1,3 +1,13 @@
+# News Plus
+
+A React app that displays the top news stories based on user searches, using the latest and best React practices
+
+
+<div display="flex">
+  <img src="https://github.com/Farhan-Nazeer/news-plus/blob/master/public/img-1.png" alt="Desktop" height="75%" width="75%">
+  <img src="https://github.com/Farhan-Nazeer/news-plus/blob/master/public/img-2.png" alt="Mobile" height="21%" width="21%">
+</div>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
