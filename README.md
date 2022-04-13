@@ -5,6 +5,7 @@ A React app that displays the top news stories based on user searches, using the
 
 <div display="flex">
   <img src="https://github.com/Farhan-Nazeer/news-plus/blob/master/public/img-1.png" alt="Desktop" height="75%" width="75%">
+  &nbsp;&nbsp;
   <img src="https://github.com/Farhan-Nazeer/news-plus/blob/master/public/img-2.png" alt="Mobile" height="21%" width="21%">
 </div>
 
